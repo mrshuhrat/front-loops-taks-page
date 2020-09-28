@@ -1,25 +1,66 @@
+@font-face {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/acme-v10-latin-regular.woff2") format("woff2"),
+    url("../fonts/acme-v10-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/archivo-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/archivo-v7-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/archivo-v7-latin-500.woff2") format("woff2"),
+    url("../fonts/archivo-v7-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/archivo-v7-latin-700.woff2") format("woff2"),
+    url("../fonts/archivo-v7-latin-700.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
+  height: 100%;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 body {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
+  height: 100%;
   line-height: 1.5;
 }
+
 .container {
   max-width: 1148px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .img {
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,4 +70,8 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main {
+  flex-grow: 1;
 }
