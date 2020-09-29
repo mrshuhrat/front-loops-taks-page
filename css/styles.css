@@ -124,6 +124,7 @@ body {
   margin: 0;
   margin-bottom: 24px;
   text-align: center;
+  text-transform: capitalize;
   font-size: 50px;
   font-family: "Acme", "Archivo", sans-serif;
 }
@@ -200,8 +201,12 @@ body {
 }
 
 .youtube-link {
+  width: 140px;
+  display: inline-flex;
+  margin-left: 50px;
   text-decoration: none;
   text-transform: capitalize;
+  font-weight: 500;
 }
 
 @media only screen and (max-width:450px) {
