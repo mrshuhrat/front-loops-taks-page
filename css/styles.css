@@ -46,12 +46,16 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  font-family: "Archivo", "Arial", sans-serif;
   height: 100%;
   line-height: 1.5;
+  color: #333;
+  background-color: #e1e2e1;
 }
 
 .container {
-  max-width: 1148px;
+  max-width: 1290px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -113,6 +117,91 @@ body {
 
 .main {
   flex-grow: 1;
+  padding-top: 40px;
+}
+
+.loops__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Acme", "Archivo", sans-serif;
+}
+
+.loops__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loops__item {
+  max-width: 300px;
+  overflow: hidden;
+  padding: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.loops__item:hover {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.7);
+}
+
+.loop__link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  background-image: url("../img/loop_img/loop1_step1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.loop__link:hover .loop__link--hover {
+  opacity: 1;
+}
+
+.loop__link--hover {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  color: #fff;  
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Arial", "Roboto", sans-serif;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.4s ease;
+}
+
+.loop__name {
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: "Acme", "Archivo", sans-serif;
+}
+
+.youtube-link {
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width:450px) {
@@ -127,5 +216,9 @@ body {
     object-fit: contain;
     width: 25px;
     height: 25px;
+  }
+
+  .loops__heading {
+    font-size: 40px;
   }
 }
