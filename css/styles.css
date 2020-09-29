@@ -75,8 +75,57 @@ body {
 /* PAGE-HEADER */
 .page-header {
   background-color: #26418f;
+  padding: 12px 0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  margin: 0 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.links__link:hover {
+  background-color: #182f74;
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+}
+
+.links__link:active {
+  opacity: 0.6;
+}
+
+.links__link:focus {
+  outline: none;
+  background-color: #182f74;
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255);
 }
 
 .main {
   flex-grow: 1;
+}
+
+@media only screen and (max-width:450px) {
+
+  .links__link {
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .links__img {
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
+  }
 }
