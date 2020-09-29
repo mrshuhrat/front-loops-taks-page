@@ -72,6 +72,11 @@ body {
   overflow: hidden;
 }
 
+/* PAGE-HEADER */
+.page-header {
+  background-color: #26418f;
+}
+
 .main {
   flex-grow: 1;
 }
