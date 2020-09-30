@@ -203,12 +203,46 @@ body {
 .youtube-link {
   width: 140px;
   display: inline-flex;
-  margin-left: 50px;
+  margin-left: 55px;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 500;
 }
 
+.youtube-link:hover {
+  text-decoration: underline;
+}
+
+/* PAGE-FOOTER */
+.page-footer {
+  background-color: #5c6bc0;
+  padding: 10px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.create-by {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  transition: 0.3s ease;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
 @media only screen and (max-width:450px) {
 
   .links__link {
