@@ -227,16 +227,20 @@ body {
 
 .create-by {
   margin: 0;
+  margin-right: 10px;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .footer__link {
+  margin-left: 10px;
   text-decoration: none;
   color: #fff;
   font-style: italic;
   transition: 0.3s ease;
+  white-space: nowrap;
 }
 
 .footer__link:hover {
@@ -259,5 +263,14 @@ body {
 
   .loops__heading {
     font-size: 40px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .create-by {
+    margin-bottom: 8px;
   }
 }
