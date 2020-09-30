@@ -164,10 +164,10 @@ body {
   display: inline-block;
   width: 250px;
   height: 150px;
-  background-image: url("../img/loop_img/loop1_step1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+}
+
+.loop__img {
+  object-fit: cover;
 }
 
 .loop__link:hover .loop__link--hover {
