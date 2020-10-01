@@ -1,0 +1,150 @@
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-700.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #16a085;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 190px;
+  padding-left: 70px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box__bg {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 100%;
+  transform: translateY(-50%);
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/bicycle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box__heading {
+  margin: 0;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.account:hover {
+  box-shadow: 0 0 0 4px #eeeded;
+}
+
+.box__text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaabaa;
+}
+
+.box__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.box__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wheel-info {
+  text-transform: capitalize;
+  color: #5c5c5c;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.total {
+  font-weight: bold;
+  color: #5c5c5c;
+  text-transform: uppercase;
+}
