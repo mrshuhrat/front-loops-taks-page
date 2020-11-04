@@ -1,0 +1,256 @@
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/*------------------------------------*\
+  #GLOBAL-STYLES
+\*------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background-image: linear-gradient(to bottom, #cfdde8, #83a1bc);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*------------------------------------*\
+  #HELPER / GLOBAL COMPONENTS
+\*------------------------------------*/
+
+/* VISUALLY HIDING CODE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.box {
+  max-width: 400px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+.box__header {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6a96d8;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.name::before {
+  display: flex;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  margin-right: 13px;
+  border-radius: 50%;
+  content: "";
+}
+
+.close-btn {
+  width: 14px;
+  height: 14px;
+  border: none;
+  background: none;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+
+.box__main {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  padding-bottom: 0;
+}
+
+.box__main-text-top {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #e6e1de;
+  font-weight: 700;
+  text-align: center;
+}
+
+.box__main-text-top::before {
+  margin-right: 10px;
+  display: flex;
+  width: 150px;
+  height: 1px;
+  content: "";
+  background-color: #dddddd;
+}
+
+.box__main-text-top::after {
+  margin-left: 10px;
+  display: flex;
+  width: 150px;
+  height: 1px;
+  content: "";
+  background-color: #dddddd;
+}
+
+.message {
+  display: inline-block;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  padding: 12px 10px;
+  max-width: 270px;
+  background-color: #e6edf6;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-message {
+  position: relative;
+  z-index: 1;
+  margin-right: auto;
+}
+
+.user-message::before {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  border-top: 10px solid #e6edf6;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 0;
+  right: 96%;
+  content: "";
+}
+
+.but-message {
+  position: relative;
+  z-index: 1;
+  margin-right: auto;
+}
+
+.but-message::before {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  border-top: 10px solid #e6edf6;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 0;
+  right: 89%;
+  content: "";
+}
+
+.mark-massage {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  border-radius: 0 5px 5px 5px;
+  background-color: #f2f2f2;
+}
+
+.mark-massage::before {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  border-top: 10px solid #f2f2f2;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 0;
+  left: 96%;
+  content: "";
+}
+
+.block-massage {
+  background-color: #ffc2c1;
+  margin-left: auto;
+  margin-bottom: 13px;
+  border-radius: 0 5px 5px 5px;
+}
+
+.box__main-hr {
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #dddddd;
+}
+
+.box__footer {
+  padding: 18px 20px;
+}
+
+.box__footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.massage-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+.send-button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6a96d8;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.send-button:hover {
+  color: #5181ca;
+}
